@@ -33,7 +33,9 @@ I'm a computer science undergraduate and a programmer building my version of the
 
 ### 📊 Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=trikto&show_icons=true&theme=dark&rank_icon=percentile)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=trikto&show_icons=true&theme=dark&rank_icon=github&hide=stars)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=trikto&size_weight=0.5&count_weight=0.5)
 
 <!-- ![GitHub Streak](https://streak-stats.demolab.com?user=trikto&theme=gruvbox&border_radius=4.5) -->
 
