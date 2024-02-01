@@ -2,7 +2,7 @@
 
 **`Digital Craftsman (Developer / Tech Enthusiast)`**
 
-I'm a computer science undergraduate and a programmer building my version of the digital world one step at a time. All coding projects are built from the ground up, from planning and designing all the way to solving real-life problems with code. Feel free to have a look at my projects. I also publish content that I have learnt on [Medium][medium].
+I'm a computer science undergraduate and a programmer building my version of the digital world one step at a time. All coding projects are built from the ground up, from planning and designing all the way to solving real-life problems with code. Feel free to have a look at my projects. I also publish content that I have learnt, on [Medium][medium].
 
 ---
 
