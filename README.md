@@ -37,10 +37,4 @@ I'm a computer science undergraduate and a programmer building my version of the
 
 <!-- ![GitHub Streak](https://streak-stats.demolab.com?user=trikto&theme=gruvbox&border_radius=4.5) -->
 
-#
-
-<details>
- <summary><h3>👨‍💻 My Coding Journey</h3></summary>
-   I started my journey in tech after choosing ICT as a subject in my Advanced Levels. There I learned to program in Python, the data structures that exist, along with the control structures used to construct algorithms. I chose to continue my passion with computers. I completed a number of certifications on web development, where I learnt about a variety of topics. Then landed an internship opportunity in DevOps learning all sorts of new things and adapting to the technologies. Continued to pursue Computer Science in university. Worked on several technologies and projects, delved into cybersecurity and learnt a lot of concepts, played some CTFs. I have learnt a lot along the way and have become way better than who I was when I started. Here's to the upcoming years of continous learning, improvement, building and breaking stuff.
-
 [medium]: https://medium.com/@trikto
