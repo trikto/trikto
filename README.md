@@ -1,4 +1,4 @@
-# 🍃 Gajan Rajah
+# 🍃 Trikto
 
 **`Digital Craftsman (Developer / Tech Enthusiast)`**
 
