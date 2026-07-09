@@ -29,12 +29,4 @@ I'm a computer science undergraduate and a programmer building my version of the
 <br />
 <br />
 
-#
-
-### 📊 Stats
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=trikto&show_icons=true&theme=dark&rank_icon=github&hide=stars)
-
-<!-- ![GitHub Streak](https://streak-stats.demolab.com?user=trikto&theme=gruvbox&border_radius=4.5) -->
-
 [medium]: https://medium.com/@trikto
