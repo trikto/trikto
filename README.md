@@ -9,6 +9,36 @@
 
 ---
 
+## Platform Topology
+
+```mermaid
+flowchart LR
+  EDGE[Edge]
+  CI[CI]
+  APP[App Layer]
+  DB[Database Layer]
+  MON[Monitoring]
+
+  EDGE --> APP
+  APP -.-> EDGE
+  CI --> APP
+  APP --> DB
+  DB -.-> APP
+  APP --> MON
+  DB -.-> MON
+
+  classDef node fill:#111a29,stroke:#6fc3ec,color:#f3f4ff,stroke-width:1px
+  class EDGE,CI,APP,DB,MON node
+  linkStyle 1,4,6 stroke-dasharray:5 5
+  linkStyle 2 stroke:#7be3a7,stroke-width:2px
+  linkStyle 3,4,5,6 stroke:#f1b563,stroke-width:2px
+```
+
+Solid line = primary route · Dotted line = reverse or secondary route<br />
+Green = delivery flow · Amber = operational and data flow
+
+---
+
 ## Selected Deployments
 
 ### OpenShift Platform Engineering
