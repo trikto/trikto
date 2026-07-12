@@ -1,37 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc">
-  <title id="title">Gajan Rajah operations map</title>
-  <desc id="desc">A dark operations map showing delivery, runtime, data, and observability lanes with local service health signals.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Gajan Rajah platform topology</title>
+  <desc id="desc">Edge and CI feed an application layer, which connects to a database layer and monitoring, with dotted reverse and secondary routes.</desc>
   <style>
-    .bg{fill:#07111f}.lane{fill:#0c1b2b;stroke:#20364d;stroke-width:1}.lane-title{fill:#8ca5bb;font:600 12px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:2px}.label{fill:#edf4ff;font:600 15px ui-sans-serif,system-ui,sans-serif}.meta{fill:#7892a8;font:12px ui-monospace,SFMono-Regular,Consolas,monospace}.route{fill:none;stroke:#3bc8d4;stroke-width:2;opacity:.7}.route.amber{stroke:#f3b562}.route.green{stroke:#7be3a7}.node{fill:#111f31;stroke:#31516b;stroke-width:1}.node-hot{stroke:#f3b562}.node-good{stroke:#7be3a7}.signal{fill:#3bc8d4}.signal.amber{fill:#f3b562}.signal.green{fill:#7be3a7}.signal.red{fill:#e27373}.flow-dot{stroke:#07111f;stroke-width:1}.flow-dot.amber{fill:#f3b562}.flow-dot.green{fill:#7be3a7}.flow-dot.cyan{fill:#3bc8d4}.pulse{animation:pulse 2.8s ease-in-out infinite}.delay{animation-delay:1.2s}.tiny{fill:#58738b;font:10px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:1px}@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.pulse{animation:none}.flow-dot{display:none}}
+    .bg{fill:#07111f}.zone{fill:#0b1a2a;stroke:#20364d;stroke-width:1}.zone-title{fill:#7892a8;font:600 12px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:2px}.label{fill:#edf4ff;font:600 16px ui-sans-serif,system-ui,sans-serif}.meta{fill:#7892a8;font:12px ui-monospace,SFMono-Regular,Consolas,monospace}.tiny{fill:#58738b;font:10px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:1px}.node{fill:#111f31;stroke:#31516b;stroke-width:1}.node-hot{stroke:#f3b562}.node-good{stroke:#7be3a7}.node-cyan{stroke:#3bc8d4}.route{fill:none;stroke-width:2;opacity:.78}.route.cyan{stroke:#3bc8d4}.route.green{stroke:#7be3a7}.route.amber{stroke:#f3b562}.route.reverse{stroke-dasharray:5 8;opacity:.58}.signal{fill:#3bc8d4}.signal.green{fill:#7be3a7}.signal.amber{fill:#f3b562}.flow-dot{stroke:#07111f;stroke-width:1}.flow-dot.green{fill:#7be3a7}.flow-dot.amber{fill:#f3b562}.flow-dot.cyan{fill:#3bc8d4}.pulse{animation:pulse 2.8s ease-in-out infinite}.delay{animation-delay:1.2s}@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.pulse{animation:none}.flow-dot{display:none}}
   </style>
-  <rect class="bg" width="1200" height="450" rx="18"/>
-  <path d="M24 72H1176" stroke="#193047"/>
+  <rect class="bg" width="1200" height="560" rx="18"/>
+  <path d="M28 72H1172" stroke="#193047"/>
+  <text x="36" y="42" class="label" style="letter-spacing:3px">SYSTEM TOPOLOGY / OPERATIONS VIEW</text>
+  <text x="1164" y="42" text-anchor="end" class="meta">STATIC ARCHITECTURE · LOCAL SIGNALS</text>
 
-  <rect class="lane" x="28" y="94" width="245" height="330" rx="12"/><rect class="lane" x="289" y="94" width="326" height="330" rx="12"/>
-  <rect class="lane" x="631" y="94" width="245" height="330" rx="12"/><rect class="lane" x="892" y="94" width="280" height="330" rx="12"/>
-  <text x="50" y="124" class="lane-title">01 / DELIVERY</text><text x="311" y="124" class="lane-title">02 / RUNTIME</text><text x="653" y="124" class="lane-title">03 / DATA</text><text x="914" y="124" class="lane-title">04 / OBSERVABILITY</text>
+  <rect class="zone" x="365" y="92" width="270" height="126" rx="12"/><text x="388" y="120" class="zone-title">01 / DELIVERY</text>
+  <rect class="zone" x="34" y="188" width="612" height="174" rx="12"/><text x="58" y="216" class="zone-title">02 / RUNTIME</text>
+  <rect class="zone" x="365" y="374" width="270" height="132" rx="12"/><text x="388" y="402" class="zone-title">03 / DATA</text>
+  <rect class="zone" x="808" y="188" width="354" height="174" rx="12"/><text x="832" y="216" class="zone-title">04 / OBSERVABILITY</text>
 
-  <path class="route green" d="M88 214H235Q258 214 311 214"/><path class="route amber" d="M88 326H245Q270 326 311 326"/>
-  <path class="route" d="M440 190V164Q440 146 476 146V190"/><path class="route" d="M440 250V282Q440 300 476 300V250"/>
-  <path class="route amber" d="M518 214H662"/><path class="route amber" d="M518 326H662"/>
-  <path class="route" d="M818 214H932"/><path class="route amber" d="M818 326H932"/>
-  <circle class="flow-dot green" r="4"><animateMotion dur="5s" repeatCount="indefinite" path="M88 214H235Q258 214 311 214"/></circle>
-  <circle class="flow-dot amber" r="4"><animateMotion dur="5s" begin="1.2s" repeatCount="indefinite" path="M88 326H245Q270 326 311 326"/></circle>
-  <circle class="flow-dot cyan" r="4"><animateMotion dur="4s" repeatCount="indefinite" path="M440 250V282Q440 300 476 300V250"/></circle>
-  <circle class="flow-dot amber" r="4"><animateMotion dur="4s" begin=".8s" repeatCount="indefinite" path="M518 214H662"/></circle>
-  <circle class="flow-dot amber" r="4"><animateMotion dur="4s" begin="1.6s" repeatCount="indefinite" path="M518 326H662"/></circle>
-  <circle class="flow-dot cyan" r="4"><animateMotion dur="5s" begin=".6s" repeatCount="indefinite" path="M818 214H932"/></circle>
+  <path class="route green" d="M500 180V238"/>
+  <path class="route cyan" d="M196 275 C300 190 390 380 500 275"/>
+  <path class="route cyan reverse" d="M500 275 C390 380 300 190 196 275"/>
+  <path class="route amber" d="M500 312V388"/>
+  <path class="route amber reverse" d="M500 388 C560 355 560 312 500 275"/>
+  <path class="route amber" d="M590 275 C720 200 830 204 930 275"/>
+  <path class="route amber reverse" d="M590 420 C750 470 850 385 930 275"/>
 
-  <g><rect class="node node-good" x="50" y="176" width="150" height="76" rx="9"/><circle class="signal green pulse" cx="70" cy="198" r="5"/><text x="84" y="203" class="label">GIT + CI</text><text x="66" y="226" class="meta">delivery lane</text><text x="66" y="242" class="tiny">BUILD / TEST / SHIP</text></g>
-  <g><rect class="node node-hot" x="50" y="288" width="150" height="76" rx="9"/><circle class="signal amber pulse delay" cx="70" cy="310" r="5"/><text x="84" y="315" class="label">DEPLOY</text><text x="66" y="338" class="meta">release controller</text><text x="66" y="354" class="tiny">ROLLBACK READY</text></g>
+  <circle class="flow-dot green" r="5"><animateMotion dur="5s" repeatCount="indefinite" path="M500 180V238"/></circle>
+  <circle class="flow-dot cyan" r="5"><animateMotion dur="5s" repeatCount="indefinite" path="M196 275 C300 190 390 380 500 275"/></circle>
+  <circle class="flow-dot cyan" r="4"><animateMotion dur="7s" repeatCount="indefinite" path="M500 275 C390 380 300 190 196 275"/></circle>
+  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-.5s" repeatCount="indefinite" path="M500 312V388"/></circle>
+  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-1.5s" repeatCount="indefinite" path="M500 388 C560 355 560 312 500 275"/></circle>
+  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-1s" repeatCount="indefinite" path="M590 275 C720 200 830 204 930 275"/></circle>
+  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-1.5s" repeatCount="indefinite" path="M590 420 C750 470 850 385 930 275"/></circle>
 
-  <g><rect class="node node-hot" x="311" y="176" width="207" height="76" rx="9"/><circle class="signal amber pulse" cx="332" cy="198" r="5"/><text x="346" y="203" class="label">EDGE / INGRESS</text><text x="327" y="226" class="meta">request boundary</text><text x="327" y="242" class="tiny">ROUTES · TLS · ACL</text></g>
-  <g><rect class="node node-good" x="378" y="270" width="140" height="76" rx="9"/><circle class="signal green pulse delay" cx="398" cy="292" r="5"/><text x="412" y="297" class="label">APP A / B</text><text x="394" y="320" class="meta">service instances</text><text x="394" y="336" class="tiny">READY / HEALTHY</text></g>
-
-  <g><rect class="node" x="653" y="176" width="201" height="76" rx="9"/><circle class="signal" cx="674" cy="198" r="5"/><text x="688" y="203" class="label">POSTGRES</text><text x="669" y="226" class="meta">transaction store</text><text x="669" y="242" class="tiny">PERSISTENT / ENCRYPTED</text></g>
-  <g><rect class="node" x="653" y="288" width="201" height="76" rx="9"/><circle class="signal" cx="674" cy="310" r="5"/><text x="688" y="315" class="label">MONGODB</text><text x="669" y="338" class="meta">document store</text><text x="669" y="354" class="tiny">BACKUP AWARE</text></g>
-
-  <g><rect class="node node-good" x="914" y="176" width="233" height="76" rx="9"/><circle class="signal green pulse" cx="935" cy="198" r="5"/><text x="949" y="203" class="label">METRICS / LOGS</text><text x="930" y="226" class="meta">signals in view</text><text x="930" y="242" class="tiny">NORMAL · 24 SIGNALS</text></g>
-  <g><rect class="node node-hot" x="914" y="288" width="233" height="76" rx="9"/><circle class="signal amber pulse delay" cx="935" cy="310" r="5"/><text x="949" y="315" class="label">BACKUP / RECOVERY</text><text x="930" y="338" class="meta">operational safety net</text><text x="930" y="354" class="tiny">VELERO · MINIO</text></g>
+  <g><rect class="node node-cyan" x="66" y="240" width="130" height="70" rx="9"/><circle class="signal" cx="86" cy="261" r="5"/><text x="101" y="266" class="label">Edge</text><text x="82" y="289" class="meta">request boundary</text><text x="82" y="304" class="tiny">ROUTES / TLS</text></g>
+  <g><rect class="node node-good" x="410" y="110" width="180" height="70" rx="9"/><circle class="signal green pulse" cx="431" cy="131" r="5"/><text x="446" y="136" class="label">CI</text><text x="427" y="159" class="meta">delivery pipeline</text><text x="427" y="174" class="tiny">BUILD / TEST / SHIP</text></g>
+  <g><rect class="node node-good" x="410" y="240" width="180" height="70" rx="9"/><circle class="signal green pulse delay" cx="431" cy="261" r="5"/><text x="446" y="266" class="label">App Layer</text><text x="427" y="289" class="meta">service instances</text><text x="427" y="304" class="tiny">READY / HEALTHY</text></g>
+  <g><rect class="node node-hot" x="410" y="388" width="180" height="70" rx="9"/><circle class="signal amber pulse delay" cx="431" cy="409" r="5"/><text x="446" y="414" class="label">Database Layer</text><text x="427" y="437" class="meta">persistent stores</text><text x="427" y="452" class="tiny">POSTGRES / MONGO</text></g>
+  <g><rect class="node node-good" x="930" y="240" width="190" height="70" rx="9"/><circle class="signal green pulse" cx="951" cy="261" r="5"/><text x="966" y="266" class="label">Monitoring</text><text x="947" y="289" class="meta">metrics / logs</text><text x="947" y="304" class="tiny">NORMAL / RECOVERY</text></g>
 
 </svg>
