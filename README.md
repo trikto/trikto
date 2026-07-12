@@ -10,10 +10,9 @@
 ---
 
 <p align="center">
-  <img src="assets/ops-control-room.svg" alt="Platform operations control room showing delivery, runtime, data, and observability lanes with service health signals" width="100%" />
+  <img src="assets/ops-control-room.svg" alt="Operations map showing delivery, runtime, data, and observability lanes with service health signals" width="1200" />
 </p>
 
-<p align="center"><sub>Original platform map · static illustrative status signals · no live data connection</sub></p>
 
 ---
 
