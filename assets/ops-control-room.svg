@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Gajan Rajah platform operations control room</title>
+  <desc id="desc">A dark operations map showing delivery, runtime, data, and observability lanes with local service health signals.</desc>
+  <style>
+    .bg{fill:#07111f}.lane{fill:#0c1b2b;stroke:#20364d;stroke-width:1}.lane-title{fill:#8ca5bb;font:600 12px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:2px}.label{fill:#edf4ff;font:600 15px ui-sans-serif,system-ui,sans-serif}.meta{fill:#7892a8;font:12px ui-monospace,SFMono-Regular,Consolas,monospace}.route{fill:none;stroke:#3bc8d4;stroke-width:2;opacity:.7}.route.amber{stroke:#f3b562}.route.green{stroke:#7be3a7}.node{fill:#111f31;stroke:#31516b;stroke-width:1}.node-hot{stroke:#f3b562}.node-good{stroke:#7be3a7}.signal{fill:#3bc8d4}.signal.amber{fill:#f3b562}.signal.green{fill:#7be3a7}.signal.red{fill:#e27373}.flow{animation:travel 5s linear infinite}.pulse{animation:pulse 2.8s ease-in-out infinite}.delay{animation-delay:1.2s}.tiny{fill:#58738b;font:10px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:1px}@keyframes travel{from{stroke-dashoffset:0}to{stroke-dashoffset:-48}}@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.flow,.pulse{animation:none}}
+  </style>
+  <rect class="bg" width="1200" height="520" rx="18"/>
+  <path d="M24 72H1176M24 458H1176" stroke="#193047"/>
+  <text x="36" y="42" class="label" style="letter-spacing:3px">PLATFORM OPERATIONS / CONTROL ROOM</text>
+  <text x="1164" y="42" text-anchor="end" class="meta">COLOMBO / KANDY · REMOTE / HYBRID</text>
+
+  <rect class="lane" x="28" y="94" width="245" height="330" rx="12"/><rect class="lane" x="289" y="94" width="326" height="330" rx="12"/>
+  <rect class="lane" x="631" y="94" width="245" height="330" rx="12"/><rect class="lane" x="892" y="94" width="280" height="330" rx="12"/>
+  <text x="50" y="124" class="lane-title">01 / DELIVERY</text><text x="311" y="124" class="lane-title">02 / RUNTIME</text><text x="653" y="124" class="lane-title">03 / DATA</text><text x="914" y="124" class="lane-title">04 / OBSERVABILITY</text>
+
+  <path class="route green" d="M88 214H235Q258 214 311 214"/><path class="route amber" d="M88 326H245Q270 326 311 326"/>
+  <path class="route" d="M440 190V164Q440 146 476 146V190"/><path class="route" d="M440 250V282Q440 300 476 300V250"/>
+  <path class="route amber" d="M518 214H662"/><path class="route amber" d="M518 326H662"/>
+  <path class="route" d="M818 214H932"/><path class="route amber" d="M818 326H932"/>
+  <path class="route green flow" stroke-dasharray="3 13" d="M88 214H235Q258 214 311 214"/><path class="route amber flow delay" stroke-dasharray="3 13" d="M518 214H662"/><path class="route flow" stroke-dasharray="3 13" d="M818 214H932"/>
+
+  <g><rect class="node node-good" x="50" y="176" width="150" height="76" rx="9"/><circle class="signal green pulse" cx="70" cy="198" r="5"/><text x="84" y="203" class="label">GIT + CI</text><text x="66" y="226" class="meta">delivery lane</text><text x="66" y="242" class="tiny">BUILD / TEST / SHIP</text></g>
+  <g><rect class="node node-hot" x="50" y="288" width="150" height="76" rx="9"/><circle class="signal amber pulse delay" cx="70" cy="310" r="5"/><text x="84" y="315" class="label">DEPLOY</text><text x="66" y="338" class="meta">release controller</text><text x="66" y="354" class="tiny">ROLLBACK READY</text></g>
+
+  <g><rect class="node node-hot" x="311" y="176" width="207" height="76" rx="9"/><circle class="signal amber pulse" cx="332" cy="198" r="5"/><text x="346" y="203" class="label">EDGE / INGRESS</text><text x="327" y="226" class="meta">request boundary</text><text x="327" y="242" class="tiny">ROUTES · TLS · ACL</text></g>
+  <g><rect class="node node-good" x="378" y="270" width="140" height="76" rx="9"/><circle class="signal green pulse delay" cx="398" cy="292" r="5"/><text x="412" y="297" class="label">APP A / B</text><text x="394" y="320" class="meta">service instances</text><text x="394" y="336" class="tiny">READY / HEALTHY</text></g>
+
+  <g><rect class="node" x="653" y="176" width="201" height="76" rx="9"/><circle class="signal" cx="674" cy="198" r="5"/><text x="688" y="203" class="label">POSTGRES</text><text x="669" y="226" class="meta">transaction store</text><text x="669" y="242" class="tiny">PERSISTENT / ENCRYPTED</text></g>
+  <g><rect class="node" x="653" y="288" width="201" height="76" rx="9"/><circle class="signal" cx="674" cy="310" r="5"/><text x="688" y="315" class="label">MONGODB</text><text x="669" y="338" class="meta">document store</text><text x="669" y="354" class="tiny">BACKUP AWARE</text></g>
+
+  <g><rect class="node node-good" x="914" y="176" width="233" height="76" rx="9"/><circle class="signal green pulse" cx="935" cy="198" r="5"/><text x="949" y="203" class="label">METRICS / LOGS</text><text x="930" y="226" class="meta">signals in view</text><text x="930" y="242" class="tiny">NORMAL · 24 SIGNALS</text></g>
+  <g><rect class="node node-hot" x="914" y="288" width="233" height="76" rx="9"/><circle class="signal amber pulse delay" cx="935" cy="310" r="5"/><text x="949" y="315" class="label">BACKUP / RECOVERY</text><text x="930" y="338" class="meta">operational safety net</text><text x="930" y="354" class="tiny">VELERO · MINIO</text></g>
+
+  <text x="36" y="490" class="meta">LOCAL ARCHITECTURE VIEW · STATIC STATUS SIGNALS · NO LIVE DATA CONNECTION</text>
+  <text x="1164" y="490" text-anchor="end" class="meta">● NORMAL  /  ● DELIVERY  /  ● RECOVERY</text>
+</svg>
