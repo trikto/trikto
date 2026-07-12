@@ -11,29 +11,29 @@
 
   <rect class="zone" x="365" y="92" width="270" height="126" rx="12"/><text x="388" y="120" class="zone-title">01 / DELIVERY</text>
   <rect class="zone" x="34" y="188" width="612" height="174" rx="12"/><text x="58" y="216" class="zone-title">02 / RUNTIME</text>
-  <rect class="zone" x="365" y="374" width="270" height="132" rx="12"/><text x="388" y="402" class="zone-title">03 / DATA</text>
+  <rect class="zone" x="365" y="400" width="270" height="144" rx="12"/><text x="388" y="428" class="zone-title">03 / DATA</text>
   <rect class="zone" x="808" y="188" width="354" height="174" rx="12"/><text x="832" y="216" class="zone-title">04 / OBSERVABILITY</text>
 
   <path class="route green" d="M500 180V238"/>
   <path class="route cyan" d="M196 275 C300 190 390 380 500 275"/>
-  <path class="route cyan reverse" d="M500 275 C390 380 300 190 196 275"/>
-  <path class="route amber" d="M500 312V388"/>
-  <path class="route amber reverse" d="M500 388 C560 355 560 312 500 275"/>
+  <path class="route cyan reverse" d="M500 275 C390 430 280 150 196 275"/>
+  <path class="route amber" d="M500 312V414"/>
+  <path class="route amber reverse" d="M500 414 C570 365 570 312 500 275"/>
   <path class="route amber" d="M590 275 C720 200 830 204 930 275"/>
-  <path class="route amber reverse" d="M590 420 C750 470 850 385 930 275"/>
+  <path class="route amber reverse" d="M590 449 C760 500 850 385 930 275"/>
 
   <circle class="flow-dot green" r="5"><animateMotion dur="5s" repeatCount="indefinite" path="M500 180V238"/></circle>
   <circle class="flow-dot cyan" r="5"><animateMotion dur="5s" repeatCount="indefinite" path="M196 275 C300 190 390 380 500 275"/></circle>
-  <circle class="flow-dot cyan" r="4"><animateMotion dur="7s" repeatCount="indefinite" path="M500 275 C390 380 300 190 196 275"/></circle>
-  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-.5s" repeatCount="indefinite" path="M500 312V388"/></circle>
-  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-1.5s" repeatCount="indefinite" path="M500 388 C560 355 560 312 500 275"/></circle>
+  <circle class="flow-dot cyan" r="4"><animateMotion dur="7s" repeatCount="indefinite" path="M500 275 C390 430 280 150 196 275"/></circle>
+  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-.5s" repeatCount="indefinite" path="M500 312V414"/></circle>
+  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-1.5s" repeatCount="indefinite" path="M500 414 C570 365 570 312 500 275"/></circle>
   <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-1s" repeatCount="indefinite" path="M590 275 C720 200 830 204 930 275"/></circle>
-  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-1.5s" repeatCount="indefinite" path="M590 420 C750 470 850 385 930 275"/></circle>
+  <circle class="flow-dot amber" r="5"><animateMotion dur="2s" begin="-1.5s" repeatCount="indefinite" path="M590 449 C760 500 850 385 930 275"/></circle>
 
   <g><rect class="node node-cyan" x="66" y="240" width="130" height="70" rx="9"/><circle class="signal" cx="86" cy="261" r="5"/><text x="101" y="266" class="label">Edge</text><text x="82" y="289" class="meta">request boundary</text><text x="82" y="304" class="tiny">ROUTES / TLS</text></g>
   <g><rect class="node node-good" x="410" y="110" width="180" height="70" rx="9"/><circle class="signal green pulse" cx="431" cy="131" r="5"/><text x="446" y="136" class="label">CI</text><text x="427" y="159" class="meta">delivery pipeline</text><text x="427" y="174" class="tiny">BUILD / TEST / SHIP</text></g>
   <g><rect class="node node-good" x="410" y="240" width="180" height="70" rx="9"/><circle class="signal green pulse delay" cx="431" cy="261" r="5"/><text x="446" y="266" class="label">App Layer</text><text x="427" y="289" class="meta">service instances</text><text x="427" y="304" class="tiny">READY / HEALTHY</text></g>
-  <g><rect class="node node-hot" x="410" y="388" width="180" height="70" rx="9"/><circle class="signal amber pulse delay" cx="431" cy="409" r="5"/><text x="446" y="414" class="label">Database Layer</text><text x="427" y="437" class="meta">persistent stores</text><text x="427" y="452" class="tiny">POSTGRES / MONGO</text></g>
+  <g><rect class="node node-hot" x="410" y="414" width="180" height="70" rx="9"/><circle class="signal amber pulse delay" cx="431" cy="435" r="5"/><text x="446" y="440" class="label">Database Layer</text><text x="427" y="463" class="meta">persistent stores</text><text x="427" y="478" class="tiny">POSTGRES / MONGO</text></g>
   <g><rect class="node node-good" x="930" y="240" width="190" height="70" rx="9"/><circle class="signal green pulse" cx="951" cy="261" r="5"/><text x="966" y="266" class="label">Monitoring</text><text x="947" y="289" class="meta">metrics / logs</text><text x="947" y="304" class="tiny">NORMAL / RECOVERY</text></g>
 
 </svg>
