@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Gajan Rajah</h1>
-  <p><strong>DEVOPS ENGINEER · PLATFORM OPERATOR · INCIDENT CALMER</strong></p>
-  <p><code>CONTROL ROOM / ONLINE</code> — turning busy infrastructure into calm, observable systems.</p>
+  <p><strong>DEVOPS ENGINEER · PLATFORM OPERATOR</strong></p>
+  <p><code>CONTROL ROOM / ONLINE</code> Turning busy infrastructure into calm, observable systems.</p>
 </div>
 
 ---
@@ -13,9 +13,9 @@
 ---
 
 > [!TIP]
-> **CURRENT SHIFT** — Build reliable platforms. Automate the repetitive work. Make production a quieter place.
+> **CURRENT SHIFT:** Build reliable platforms. Automate the repetitive work. Make production a quieter place.
 
-| SIGNAL | STATUS | OBJECTIVE |
+| TECH | STATUS | OBJECTIVE |
 | :-- | :-- | :-- |
 | Platform | 🟢 ONLINE | Build foundations that teams can trust. |
 | Delivery | 🟢 FLOWING | Turn releases into repeatable routines. |
@@ -26,22 +26,22 @@
 ### 01 / OpenShift Platform Engineering
 **Mission:** deliver production-ready clusters with storage, policy, and recovery built in.
 
-**Signal:** OpenShift · Ceph · Velero · Ansible · network guardrails
+**Tech:** OpenShift · Ceph · Velero · Ansible · network guardrails
 
 ### 02 / [gajan.dev](https://gajan.dev)
 **Mission:** operate a personal systems lab where platform ideas meet real telemetry.
 
-**Signal:** Google Cloud · Kubernetes · GitLab CI · Prometheus · Grafana
+**Tech:** Google Cloud · Kubernetes · GitLab CI · Prometheus · Grafana
 
 ### 03 / Zelvo
 **Mission:** turn receipts into useful financial clarity without losing the human context.
 
-**Signal:** Docker · GCP · Neon · Prisma · Auth0 · OCR
+**Tech:** Docker · GCP · Neon · Prisma · Auth0 · OCR
 
 ### 04 / NuBred
 **Mission:** give agriculture teams a dependable home for plant and variety management.
 
-**Signal:** React · Node.js · Docker · Neon · Clerk · Hetzner
+**Tech:** React · Node.js · Docker · Neon · Clerk · Hetzner
 
 ## Operator loadout
 
