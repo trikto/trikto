@@ -1,6 +1,5 @@
 <div align="center">
-  <h1>Gajan Rajah</h1>
-  <p><strong>DEVOPS ENGINEER · PLATFORM OPERATOR</strong></p>
+  <h1>DEVOPS ENGINEER</h1>
   <p><code>CONTROL ROOM / ONLINE</code> Turning busy infrastructure into calm, observable systems.</p>
 </div>
 
